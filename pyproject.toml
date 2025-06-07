@@ -1,0 +1,20 @@
+[project]
+name = "fastai-lesson2"
+version = "0.1.0"
+description = "FastAI Lesson 2 Project"
+authors = [
+    {name = "WRTeng",email = "wd2147@nyu.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
