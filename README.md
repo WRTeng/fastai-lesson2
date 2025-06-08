@@ -1,28 +1,46 @@
-# Cat/Dog Classifier Web Interface
+# Cat/Dog Classifier Web App
 
-A web interface for a cat/dog image classifier built with FastAI and Gradio.
+A beautiful web application that uses AI to classify images as either cats or dogs. Built with HTML, JavaScript, and Tailwind CSS.
 
-## Live Demo
+## Features
 
-Visit the [GitHub Pages site](https://[your-username].github.io/[repo-name]) to try the classifier.
+- 🎨 Modern, responsive UI with Tailwind CSS
+- 📸 Image preview before prediction
+- 🤖 AI-powered classification
+- 📊 Confidence score display
+- 🎯 Real-time predictions
 
-## Local Development
+## Setup
 
-1. Start the Gradio server:
-   ```bash
-   jupyter notebook notebooks/server.ipynb
-   ```
-   Run all cells in the notebook to start the server.
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd <repo-name>
+```
 
-2. Open `ui/index.html` in your web browser to use the interface locally.
+2. Start the local server:
+```bash
+python server.py
+```
 
-## Project Structure
+3. Open your browser and navigate to:
+```
+http://localhost:8000
+```
 
-- `notebooks/`: Contains Jupyter notebooks for training and serving the model
-- `ui/`: Contains the web interface files
-  - `index.html`: Main interface
-  - `app.js`: JavaScript code for handling predictions
+## Usage
 
-## Note
+1. Click the upload area or drag an image
+2. Preview your image
+3. Click "Predict" to get the AI's classification
+4. View the result with confidence score
 
-The Gradio server URL in `app.js` needs to be updated whenever you restart the server. The new URL can be found in the notebook output after running the server.
+## Technical Details
+
+- Uses Gradio's API for predictions
+- Serves files through a Python HTTP server with CORS support
+- Implements base64 image encoding for API communication
+
+## License
+
+MIT License 

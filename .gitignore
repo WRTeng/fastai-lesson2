@@ -4,29 +4,41 @@ __pycache__/
 *$py.class
 *.so
 .Python
-.env
-.venv
 env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-*.egg
-*.egg-info/
-dist/
 build/
-eggs/
-parts/
-bin/
-var/
-sdist/
 develop-eggs/
-.installed.cfg
+dist/
+downloads/
+eggs/
+.eggs/
 lib/
 lib64/
-.pytest_cache/
-.coverage
-htmlcov/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -34,20 +46,11 @@ htmlcov/
 profile_default/
 ipython_config.py
 
-# VS Code
-.vscode/
-*.code-workspace
-
 # macOS
-.DS_Store
 .AppleDouble
 .LSOverride
-._*
 
 # Windows
-Thumbs.db
-ehthumbs.db
-Desktop.ini
 $RECYCLE.BIN/
 
 # Node
@@ -55,12 +58,6 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# IDE
-.idea/
-*.swp
-*.swo
-*~
 
 # Project specific
 model.pkl

@@ -1,6 +1,4 @@
-// Initialize Gradio client
-// IMPORTANT: Update this URL whenever you restart your Gradio server
-// You can find the new URL in your notebook output after running the server
+// Initialize Gradio client with the correct endpoint
 const client = new window.gradio.Client("https://f4b271e3755c527535.gradio.live");
 
 // DOM elements
