@@ -1,5 +1,7 @@
 // Initialize Gradio client
-const client = new window.gradio.Client("http://127.0.0.1:7860");
+// IMPORTANT: Update this URL whenever you restart your Gradio server
+// You can find the new URL in your notebook output after running the server
+const client = new window.gradio.Client("https://f4b271e3755c527535.gradio.live");
 
 // DOM elements
 const dropZone = document.getElementById('dropZone');
